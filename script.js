@@ -22,27 +22,27 @@ const drumKitTiles = [
     {
         dataKey: 71,
         sound: "example",
-        kbd: "f"
+        kbd: "g"
     },
     {
         dataKey: 72,
         sound: "example",
-        kbd: "g"
+        kbd: "h"
     },
     {
         dataKey: 74,
         sound: "example",
-        kbd: "k"
+        kbd: "j"
     },
     {
         dataKey: 75,
         sound: "example",
-        kbd: "h"
+        kbd: "k"
     },
     {
         dataKey: 76,
         sound: "example",
-        kbd: "j"
+        kbd: "l"
     }
 ]
 
@@ -63,6 +63,18 @@ for (let i=0; i < 9; i++) {
 
 createDrumKeys();
 
+//to create the audio tags
+function createAudioTags () {
+    for(let i=0; i < 9; i++) {
+        let audio = document.createElement('audio')
+        audio.setAttribute('data-key', drumKitTiles[i].dataKey)
+        audio.setAttribute('src', drumKitTiles[i].sound)
+        document.getElementById('audio').appendChild(audio)
+    }
+}
+
+createAudioTags();
+
 window.addEventListener('keydown', function (evt) {
-    this.console.log(evt)
+    console.log(evt)
 })
