@@ -77,9 +77,9 @@ createAudioTags();
 
 function playMusic () {
     let audio = document.querySelector('#theme-song')
+    audio.loop = true
     audio.volume = 0.7
     audio.play()
-    audio.loop = true
 }
 
 playMusic();
