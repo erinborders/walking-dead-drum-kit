@@ -21,6 +21,7 @@ body {
     border: 2px solid black;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0,0,0,0.3) inset;
+    transition: all .5s;
 }
 
 kbd {
@@ -37,4 +38,5 @@ span {
     border: 2px solid red;
     box-shadow: 0 0 20px rgb(216, 75, 75);
     color: rgb(250, 18, 18);
+    transform: scale(1.1)
 }
