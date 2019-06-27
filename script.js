@@ -75,6 +75,15 @@ function createAudioTags () {
 
 createAudioTags();
 
+function playMusic () {
+    let audio = document.querySelector('#theme-song')
+    audio.volume = 0.7
+    audio.play()
+    audio.loop = true
+}
+
+playMusic();
+
 function playScreams (evt) {
     let audio = document.querySelector(`audio[data-key="${evt.keyCode}"]`)
     let key = document.querySelector(`div[data-key="${evt.keyCode}"]`)
