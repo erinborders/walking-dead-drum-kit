@@ -6,7 +6,7 @@ const drumKitTiles = [
     },
     {
         dataKey: 83,
-        sound: "sounds/deathyell2.wav",
+        sound: "sounds/deathyell9.wav",
         kbd: "s"
     },
     {
@@ -75,11 +75,25 @@ function createAudioTags () {
 
 createAudioTags();
 
-window.addEventListener('keydown', function (evt) {
+function playScreams (evt) {
     let audio = document.querySelector(`audio[data-key="${evt.keyCode}"]`)
     let key = document.querySelector(`div[data-key="${evt.keyCode}"]`)
     if(!audio) return; //stops the function from running if there's no audio
     audio.currentTime = 0 //to rewind in case the person hits the key multiple times
     audio.play()
     key.classList.add('playing')
-})
+}
+
+function removeTransition (evt) {
+    //pick the longest transition event
+    if(evt.propertyName !== 'transform') {
+        return //skip if it's not a transform
+    }
+    this.classList.remove('playing')
+}
+
+var keys = document.querySelectorAll('.key')
+keys.forEach(key => key.addEventListener('transitionend', removeTransition))
+//query selector all returns an array so we need to loop through each item and add an
+//event listener
+window.addEventListener('keydown', playScreams)

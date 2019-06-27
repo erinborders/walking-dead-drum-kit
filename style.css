@@ -21,7 +21,14 @@ body {
     border: 2px solid black;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0,0,0,0.3) inset;
-    transition: all .5s;
+    transition: all 1s;
+}
+
+h1 {
+    font-family: 'Creepster', cursive;
+    color: red;
+    text-shadow: 2px 2px black;
+    text-align: center;
 }
 
 kbd {
