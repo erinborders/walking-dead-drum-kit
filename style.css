@@ -17,7 +17,7 @@ body {
 .key {
     grid-row-start: 2;
     text-align: center;
-    background-color: rgba(119, 15, 15, 0.445);
+    background-color: rgba(119, 15, 15, 0.651);
     border: 2px solid black;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0,0,0,0.3) inset;
