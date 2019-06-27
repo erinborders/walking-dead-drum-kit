@@ -1,47 +1,47 @@
 const drumKitTiles = [
     {
         dataKey: 65,
-        sound: "example",
+        sound: "sounds/deathyell1.wav",
         kbd: "a"
     },
     {
         dataKey: 83,
-        sound: "example",
+        sound: "sounds/deathyell2.wav",
         kbd: "s"
     },
     {
         dataKey: 68,
-        sound: "example",
+        sound: "sounds/deathyell3.wav",
         kbd: "d"
     },
     {
         dataKey: 70,
-        sound: "example",
+        sound: "sounds/deathyell4.wav",
         kbd: "f"
     },
     {
         dataKey: 71,
-        sound: "example",
+        sound: "sounds/deathyell5.wav",
         kbd: "g"
     },
     {
         dataKey: 72,
-        sound: "example",
+        sound: "sounds/deathyell6.wav",
         kbd: "h"
     },
     {
         dataKey: 74,
-        sound: "example",
+        sound: "sounds/deathyell7.wav",
         kbd: "j"
     },
     {
         dataKey: 75,
-        sound: "example",
+        sound: "sounds/deathyell8.wav",
         kbd: "k"
     },
     {
         dataKey: 76,
-        sound: "example",
+        sound: "sounds/zombie1.wav",
         kbd: "l"
     }
 ]
