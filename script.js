@@ -77,5 +77,9 @@ createAudioTags();
 
 window.addEventListener('keydown', function (evt) {
     let audio = document.querySelector(`audio[data-key="${evt.keyCode}"]`)
-    console.log(audio)
+    let key = document.querySelector(`div[data-key="${evt.keyCode}"]`)
+    if(!audio) return; //stops the function from running if there's no audio
+    audio.currentTime = 0 //to rewind in case the person hits the key multiple times
+    audio.play()
+    key.classList.add('playing')
 })
