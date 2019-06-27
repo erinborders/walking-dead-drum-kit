@@ -52,7 +52,7 @@ for (let i = 0; i < 9; i++) {
     let div = document.createElement('div')
     div.setAttribute("id", i)
     div.classList.add("key")
-    div.innerHTML = `<kbd>${drumKitTiles[i].kbd}</kbd>\n<span>${drumKitTiles[i].dataKey}</span>`
+    div.innerHTML = `<kbd>${drumKitTiles[i].kbd}</kbd>\n<span></span>`
     document.getElementById('container').appendChild(div)
 }
 //set the data-key class value to the corresponding dataKey property in the drumKitTiles object
