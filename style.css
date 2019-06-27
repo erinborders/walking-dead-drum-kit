@@ -1,0 +1,15 @@
+body {
+    background-color: red;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto;
+    grid-template-rows: 30vh 30vh 30vh;
+    grid-column-start: 2; 
+}
+
+.key {
+    grid-row-start: 2;
+    
+}
