@@ -26,10 +26,15 @@ body {
 kbd {
     display: block;
     font-size: 50px;
-    color: rgb(250, 18, 18);
+    font-family: 'Creepster', cursive;
+}
+
+span {
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .playing {
     border: 2px solid red;
     box-shadow: 0 0 20px rgb(216, 75, 75);
+    color: rgb(250, 18, 18);
 }
