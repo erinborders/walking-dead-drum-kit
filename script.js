@@ -76,5 +76,6 @@ function createAudioTags () {
 createAudioTags();
 
 window.addEventListener('keydown', function (evt) {
-    console.log(evt)
+    let audio = document.querySelector(`audio[data-key="${evt.keyCode}"]`)
+    console.log(audio)
 })
